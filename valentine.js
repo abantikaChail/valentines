@@ -1,17 +1,8 @@
-document.getElementById('No').addEventListener('mouseover', function() {
-    this.classList.add('move');
-    document.getElementById('Yes').classList.remove('move');
-});
-
-// document.getElementById('Yes').addEventListener('mouseover', function() {
-//     this.classList.add('move');
-//     document.getElementById('No').classList.remove('move');
-// });
-
-document.getElementById('No').addEventListener('click', function(e) {
-    e.preventDefault();
-});
-
-// document.getElementById('Yes').addEventListener('click', function(e) {
-    // e.preventDefault();
-// });
+function moveButton() {
+    var button = document.getElementById('myButton');
+    var newX = Math.random() * (window.innerWidth - button.offsetWidth);
+    var newY = Math.random() * (window.innerHeight - button.offsetHeight);
+    
+    button.style.left = newX + 'px';
+    button.style.top = newY + 'px';
+}
