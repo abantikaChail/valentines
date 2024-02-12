@@ -1,5 +1,5 @@
 function moveButton() {
-    var button = document.getElementById('myButton');
+    var button = document.getElementById('No');
     var newX = Math.random() * (window.innerWidth - button.offsetWidth);
     var newY = Math.random() * (window.innerHeight - button.offsetHeight);
     
