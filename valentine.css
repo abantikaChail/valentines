@@ -1,37 +1,35 @@
 body {
-        margin: 0;
-        padding: 0;
-        background-color: #ffc0cb; /* Pink background */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    .video-container {
-        position: relative;
-        width: 50%;
-    }
-
-    video {
-        width: 50%;
-        height: 40%;
-        display: block;
-    }
-
-    .buttons {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .buttons button {
-        margin: 0 10px;
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #fff;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+.gif-container {
+            position: relative;
+        }
+.gif {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+.buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+.button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+.button:hover {
+            background-color: lightgray;
+        }
