@@ -1,34 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+        margin: 0;
+        padding: 0;
+        background-color: #ffc0cb; /* Pink background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+    .video-container {
+        position: relative;
+        width: 50%;
+    }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
+    video {
+        width: 50%;
+        height: 40%;
+        display: block;
+    }
 
-img {
-    max-width: 100%;
-}
+    .buttons {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
 
-No {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-Yes.static {
-    position: static;
-}
+    .buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
