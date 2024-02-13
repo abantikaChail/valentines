@@ -3,38 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Move Button on Hover</title>
-<style>
-    #myButton {
-        position: absolute;
-        top: 50px; /* Initial top position */
-        left: 50px; /* Initial left position */
-    }
-</style>
-</head>
-<body>
-
-<button id="myButton" onmouseover="moveButton()">Hover over me</button>
-
-<script>
-function moveButton() {
-    var button = document.getElementById('myButton');
-    var newX = Math.random() * (window.innerWidth - button.offsetWidth);
-    var newY = Math.random() * (window.innerHeight - button.offsetHeight);
-    
-    button.style.left = newX + 'px';
-    button.style.top = newY + 'px';
-}
-</script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Video Page</title>
 <style>
     body {
@@ -80,7 +48,7 @@ function moveButton() {
 
 <div class="video-container">
     <video controls autoplay>
-        <source src="your-video-source.mp4" type="video/mp4">
+        <source src="video1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="buttons">
