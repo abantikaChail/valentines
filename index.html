@@ -2,22 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pink Background with GIF and Buttons</title>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <title>Will You?</title>
+    <link rel="stylesheet" href= valentine.css>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.6/dist/sweetalert2.all.min.js"></script>
+    <style>
+        #no {
+        position: absolute;
+    }
+
+    </style>
 </head>
 <body>
 
-<div class="gif-container" id = "gif1">
-    <img src="gif1.gif" class="gif" alt="Continuous GIF">
-</div>
-<div class="gif-container" id = "gif2">
-    <img src="gif2.gif" class="gif" alt="Continuous GIF">
+<div class="header">
+    <h1>Question?</h1><br>
 </div>
 
-<div class="buttons">
-    <button class="button" id = "yes">YES</button>
-    <button class="button" id = "no">NO</button>
-</div>
+<div class = "container">
+    <div class="gif-container">
+        <img src="gif2.png" class="gif" alt="Continuous GIF">
+    </div>
 
+    <div class="buttons">
+        <button class="button" id="yes" onclick="showGifPopup()">YES</button>
+        <button class="button" id="no" onmouseover="moveButton()" onclick="moveButton()">NO</button>
+    </div>
+</div>
+<script src="valentine.js"></script>
 </body>
 </html>
