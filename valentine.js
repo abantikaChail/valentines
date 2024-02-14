@@ -10,7 +10,7 @@ function moveButton() {
 function showGifPopup() {
     Swal.fire({
         title: 'Custom GIF Popup',
-        imageUrl: 'gif2.png',
+        imageUrl: 'gif2.mp4',
         imageWidth: 200,
         imageHeight: 200,
         imageAlt: 'Custom GIF',
@@ -18,7 +18,7 @@ function showGifPopup() {
     }
     ).then((result) => {
         if (result.isConfirmed) {
-            document.querySelector('.gif-container img').src = 'Static/gif3.jfif';
+            document.querySelector('.gif-container img').src = 'Static/gif3.mp4';
         }
     });
     }
